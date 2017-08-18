@@ -64,7 +64,7 @@ router.route('/:value')
 
 // REGISTER OUR ROUTES -------------------------------
 // all of our routes will be prefixed with /api
-app.use('/api', router);
+app.use('/', router);
 
 // Respond not found to all the wrong routes
 app.use(function (req, res, next) {
